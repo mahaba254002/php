@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Understanding Input Types!</legend>
+                    <form action="your_form_processing_script.php" method="post" enctype="multipart/form-data">
+                        <table>
+                            <tr>
+                                <td><label for="name">Name:</label></td>
+                                <td><input type="text" name="name" id="name" maxlength="10" tabindex="1"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="dob">Date of Birth:</label></td>
+                                <td><input type="date" name="dob" id="dob" tabindex="2"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="image">Upload your Photo:</label></td>
+                                <td><input type="file" name="image" id="image" accept="image/*" tabindex="3"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email:</label></td>
+                                <td><input type="email" name="email" id="email" maxlength="50" tabindex="4"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="phone">Tel no:</label></td>
+                                <td><input type="tel" name="phone" id="phone" maxlength="15" tabindex="5"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="git">Github link:</label></td>
+                                <td><input type="url" name="git" id="git" maxlength="50" tabindex="6"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" value="Submit" tabindex="7">
+                                    <input type="reset" value="Reset" tabindex="8">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
