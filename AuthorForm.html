@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AuthorForm.css">
+    <title>Understanding Regular Expressions</title>
+</head>
+<body>
+    <table>
+        <tr><td>
+            <fieldset>
+                <legend>Author's Details</legend>
+                <form action="AuthorValidation.php" method="post" name="authorInfo">
+                    <p id="enterInfo" tabindex="1"><br>Please enter information to access resources available <br></p>
+                    <table>
+                        <tr>
+                            <td id="AuthorLabel"><label for="Author">Author Name:</label></td>
+                            <td><input type="text" name="Author" id="Author"></td>
+                        </tr>
+                        <tr>
+                            <td id="DOBLabel"><label for="DOB">Birthdate:</label></td>
+                            <td><input type="date" name="DOB" id="DOB" max="2022-11-11" min="1900-11-11"></td>
+                        </tr>
+                        <tr>
+                            <td id="qualificationLabel"><label for="qualification">Qualifications:</label></td>
+                            <td><input type="text" name="qualification" id="qualification"></td>
+                        </tr>
+                        <tr>
+                            <td id="specialtyLabel"><label for="specialty">Specialty:</label></td>
+                            <td><input type="text" name="specialty" id="specialty"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+        </td></tr>
+    </table>
+</body>
+</html>
